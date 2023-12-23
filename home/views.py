@@ -4,7 +4,9 @@ from django.shortcuts import render
 
 def home(request):
     # return HttpResponse("This is my home page")
-    return render(request,"index.html")
+
+    context = {"name":"Arnab","age": 19,"course":"django"}
+    return render(request,"index.html",context)
 
 def about(request):
     # return HttpResponse("This is my about page")
