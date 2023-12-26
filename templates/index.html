@@ -1,5 +1,5 @@
 {%extends "baseLayout.html" %}
-
+{%block homeactive %}active{% endblock homeactive %}
 <body>
     {%block content %}
     {%load static%}
@@ -15,10 +15,13 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 
-                <img src="{% static 'developer.jpg'%}" class="d-block w-100 h-100" alt="...">
+                <img src="{% static 'images/developer.jpg'%}" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="{% static 'programmer.jpg'%}" class="d-block w-100 h-100" alt="...">
+                <img src="{% static 'images/programmer.jpg'%}" class="d-block w-100" alt="some code on a pc">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'images/slider3.avif' %}" class="d-block w-100" alt="macbook image">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -75,7 +78,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
-    {%endblock %}
+    {%endblock content %}
 </body>
 
 </html>
